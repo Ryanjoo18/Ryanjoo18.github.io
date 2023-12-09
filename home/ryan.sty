@@ -1,0 +1,145 @@
+\usepackage[a4paper, top=1.0in, bottom=1.0in, left=1.0in, right=1.0in, heightrounded]{geometry}
+\usepackage{lmodern,amsmath,amssymb,amsthm,amsfonts,mathrsfs,mathtools,changepage,multirow,centernot,array}
+\theoremstyle{definition}
+\usepackage[english]{babel}
+\usepackage{lipsum}
+\usepackage{gensymb}
+\usepackage{soul,xcolor}
+\usepackage{amsmath}
+\usepackage{xcoffins,calc}
+\usepackage[raggedrightboxes]{ragged2e}
+\usepackage{cancel}
+\usepackage{graphicx,float} %package to manage images
+\graphicspath{ {./images/} }
+\usepackage[rightcaption]{sidecap}
+\usepackage{wrapfig}
+\usepackage{MnSymbol}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usepackage[most,listings]{tcolorbox}
+\usetikzlibrary{calc,intersections,through,backgrounds,positioning}
+\usepackage{hyperref} %\href{link}{name}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=blue,
+}
+\usepackage{cleveref}
+\usepackage{longtable}
+\usepackage{tabularray}
+\usepackage{booktabs}
+\usepackage{physics}
+\usepackage{derivative} %odv
+\usepackage{ifthen}
+\usepackage{pgfplots}
+\usepackage{commath}
+\usepackage{fancyvrb} %\Verbatim[numbers=left,frame=single,formatcom=\color{red}] - this is used to print code
+\usepackage{fancyhdr,lastpage} % used to do headers and footers left, right, center
+\usepackage{etoolbox} % to write your own packages
+\usepackage[Bjornstrup]{fncychap} %options: Sonny,Lenny,Glenn,Conny,Rejne,Rjarne,Bjornstrup
+
+% chemistry
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{chemformula}
+\usepackage{plimsoll}
+
+\newcommand{\cbrt}[1]{\sqrt[3]{#1}}
+\newcommand{\floor}[1]{\left\lfloor #1 \right\rfloor}
+\newcommand{\ceiling}[1]{\left\lceil #1 \right\rceil}
+\newcommand{\brac}[1]{\left(#1\right)}
+\newcommand{\sqbrac}[1]{\left[#1\right]}
+\newcommand{\absolute}[1]{\left|#1\right|}
+
+\newcommand{\vocab}[1]{\textbf{\color{blue}#1}}
+
+\newcommand*\diam{\mathrm{diam}\!\mathop{}}
+\newcommand{\cosec}{\qopname\relax o{cosec}}
+\newcommand{\tab}{\hspace{0.5cm}}
+\newcommand{\per}[2]{^{#1}\mathrm{P}_{#2}}
+\newcommand{\com}[2]{^{#1}\mathrm{C}_{#2}}
+\DeclareMathOperator{\lcm}{lcm}
+
+\newcommand{\CC}{\mathbb C}
+\newcommand{\FF}{\mathbb F}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\ZZ}{\mathbb Z}
+\newcommand{\KK}{\mathbb K}
+
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\theta}{\vartheta}
+\renewcommand{\kappa}{\varkappa}
+\renewcommand{\rho}{\varrho}
+\renewcommand{\phi}{\varphi}
+
+\usepackage{siunitx}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.35em}
+
+% defining environments
+
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{formula}{Formula}[section]
+\newtheorem{property}{Property}[section]
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem*{remark}{Remark}
+
+\tcbuselibrary{theorems}
+\newtcbtheorem[number within=section]{thrm}{Theorem}%
+{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{th}
+
+\newtcbtheorem[number within=section]{defn}{Definition}%
+{colback=red!5,colframe=red!40!black,fonttitle=\bfseries}{de}
+
+\newenvironment{prty}{%
+    \begin{tcolorbox}[
+        colback=red!5!white, % Light green interior
+        colframe=red!50!black, % Dark green border
+        boxrule=1.5pt, % Border thickness
+        arc=2pt, % No rounded corners
+        boxsep=0pt % No padding
+    ]%
+    \begin{property}%
+}{%
+    \end{property}%
+    \end{tcolorbox}%
+}
+
+\newenvironment{exmp}{%
+    \begin{tcolorbox}[
+        colback=blue!5!white, 
+        colframe=blue!50!black, 
+        boxrule=1.5pt, % Border thickness
+        arc=2pt, % No rounded corners
+        boxsep=1pt % No padding
+    ]%
+    \begin{example}%
+}{%
+    \end{example}%
+    \end{tcolorbox}%
+}
+
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+
+\theoremstyle{definition}
+\newtheorem{prbm}{Problem}
+
+\newenvironment{ebox}{%
+    \begin{tcolorbox}[
+        boxrule=1pt, % Border thickness
+        arc=0pt, % Rounded corners
+        boxsep=1pt % Padding
+    ]%
+    %
+}{%
+    %
+    \end{tcolorbox}%
+}

@@ -1,10 +1,18 @@
 .main {
+<<<<<<< HEAD
   margin-top: 10%; /* Add a top margin to avoid content overlay */
   box-sizing: border-box;
 }
 
 body {
   font-family: 'Albert Sans';
+=======
+  margin-top: 60px; /* Add a top margin to avoid content overlay */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+>>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
   padding: 25px;
   background-color: white;
   color: black;
@@ -33,6 +41,7 @@ a:hover, a:active {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 .navbar ul {
   display: inline-flex;
   list-style: none;
@@ -40,6 +49,9 @@ a:hover, a:active {
 }
 
 .navbar ul li a {
+=======
+.navbar a {
+>>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
   float: left;
   font-size: 20px;
   color: rgb(100, 100, 100);
@@ -48,6 +60,7 @@ a:hover, a:active {
   text-decoration: none;
 }
 
+<<<<<<< HEAD
 .navbar ul li a:hover, a:active {
   color: white;
   background-color: black;
@@ -121,6 +134,12 @@ a:hover, a:active {
   padding: 2%;
 }
 
+=======
+.navbar a:hover, a:active {
+  color: rgb(0, 128, 255);
+}
+
+>>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
