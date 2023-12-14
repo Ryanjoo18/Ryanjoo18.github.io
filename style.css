@@ -1,18 +1,9 @@
 .main {
-<<<<<<< HEAD
-  margin-top: 10%; /* Add a top margin to avoid content overlay */
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Albert Sans';
-=======
   margin-top: 60px; /* Add a top margin to avoid content overlay */
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
->>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
   padding: 25px;
   background-color: white;
   color: black;
@@ -41,17 +32,7 @@ a:hover, a:active {
   font-size: 16px;
 }
 
-<<<<<<< HEAD
-.navbar ul {
-  display: inline-flex;
-  list-style: none;
-  color: white;
-}
-
-.navbar ul li a {
-=======
 .navbar a {
->>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
   float: left;
   font-size: 20px;
   color: rgb(100, 100, 100);
@@ -60,86 +41,10 @@ a:hover, a:active {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-.navbar ul li a:hover, a:active {
-  color: white;
-  background-color: black;
-}
-
-.navbar .fa {
-  margin-right: 8px;
-}
-
-.navbar ul li:hover .sub-menu {
-  display: block;
-  position: absolute;
-  background-color: white;
-  margin-top: 40px;
-  margin-left: -15px;
-}
-
-.navbar ul li:hover .sub-menu ul {
-  display: block;
-  margin: 10px;
-}
-
-/* Style all font awesome icons */
-.social .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.social .fa:hover {
-  opacity: 0.7;
-}
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin-square {
-  background: rgb(14, 106, 186);
-  color: white;
-}
-
-.fa-github {
-  background: black;
-  color: white;
-}
-
-.social a:hover {
-  color: white;
-}
-
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: white;
-  text-align: center;
-  padding: 2%;
-}
-
-=======
 .navbar a:hover, a:active {
   color: rgb(0, 128, 255);
 }
 
->>>>>>> 87ac10f3506a16dac0e3937ab267d8d786cc373d
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
