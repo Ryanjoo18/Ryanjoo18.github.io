@@ -1,0 +1,435 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% change color hyperlinks
+\hypersetup{%
+    colorlinks=true,% hyperlinks will be black
+    urlcolor=[rgb]{0.04,0,0.5},
+    urlbordercolor=[rgb]{0.7,0.7,0.7},% hyperlink borders will be gray
+    pdfborderstyle={/S/U/W 0.5}% border style will be underline of width 1pt
+}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeItemPaper}[1]{
+    \item\small{
+            {#1}
+    }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textbf{#1}       & #2                 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\href{}{\Large Ryan Joo Rui An}} & \href{mailto:joo.ruian.ryan@dhs.edu.sg}{joo.ruian.ryan@dhs.edu.sg} \\
+\href{https://www.linkedin.com/in/ryan-joo-rui-an/}{\faLinkedin}
+\href{https://github.com/Ryanjoo18/}{\faGithub} & +65 8287 6889 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Dunman High School}{Singapore, SG}
+{GCE A Level: }{2023 -- 2024} % XX/90 Rank Points, X in H2 Mathematics, X in H3 Mathematics
+\resumeItemListStart
+\resumeItem{Awards}
+{}
+\resumeItemListEnd
+
+\resumeSubheading
+{Chung Cheng High School (Main)}{Singapore, SG}
+{GCE O Level: 10 subjects including Additional Mathematics and Physics at grades A1 -- A2}{2021 -- 2022}
+\resumeItemListStart
+\resumeItem{Awards}
+{Chuang Weilang Mathematics Award, 
+Dr. Chuang Chu Lin Scholarship for 1st in Standard, 
+Bilingual Award for Excellence in English and Higher Chinese, 
+Best in Additional Mathematics (Secondary Three) Award, 
+Best in Mathematics (Secondary Three) Award.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Chong Hwa Independent High School}{Kuala Lumpur, MY}
+{UEC Junior}{2019 -- 2020}
+\resumeItemListStart
+\resumeItem{Awards}
+{Top Scorer Prize in Science, 
+Top Scorer Prize in Mathematics, 
+Top Scorer Prize in English Language, 
+Top Scorer Prize in Bahasa Malaysia, 
+Overall Second Position in Junior Middle One.
+}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Sengkang General Hospital}{Singapore, SG}
+{Dietetics Intern}{Dec 2023}
+\resumeItemListStart
+\resumeItemPaper{}
+%\resumeItemPaper{Acquired foundational knowledge of dietetics profession and infection control protocols during a comprehensive hospital introduction.}
+%\resumeItemPaper{Shadowed dieticians in inpatient/outpatient settings, observing 15 tube feeding and nutritional support cases, enhancing understanding of tailored patient care.}
+%\resumeItemPaper{Explored therapeutic diets for various medical conditions, contributing to the development of personalised nutritional plans.}
+%\resumeItemPaper{Conducted hospital kitchen tour, observing meal plating procedures, ensuring adherence to dietary guidelines.}
+%\resumeItemPaper{Assisted in nutritional supplement administration, supporting patient treatment plans.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Cemerlang Bakti Tuition Centre}{Selangor, MY}
+{Teaching Intern}{Nov 2022 -- Dec 2022}
+\resumeItemListStart
+\resumeItemPaper{Conducted Mathematics Olympiad classes for 10 students, aged 7 to 16, achieving noticeable advancements in students' problem-solving skills and mathematical comprehension.}
+\resumeItemPaper{Developed and delivered lesson plans focusing on problem-solving techniques, mathematical reasoning, and critical thinking skills.}
+\resumeItemPaper{Tracked individual student progress and offered tailored assistance in grasping complex mathematical concepts.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubheading
+{The Road to Mastery: Mathematics Olympiad}{}
+{Book}{June 2023 -- present}
+\vspace{.1cm}
+
+This book presents strategic approaches for excelling in Mathematics Olympiad competitions, providing valuable insights and techniques.
+
+\resumeSubheading
+{Mathematics: A University-Level Introduction}{}
+{Book}{June 2023 -- present}
+\vspace{.1cm}
+
+Introducing university-level Mathematics concepts, this book serves as a comprehensive guide, aiding in the understanding and application of advanced mathematical principles.
+
+\resumeSubheading
+{Physics: A University-Level Introduction}{}
+{Book}{Sep 2023 -- present}
+\vspace{.1cm}
+
+Presenting a university-level introduction to Physics, this book offers comprehensive insights and knowledge, facilitating a solid grasp of fundamental principles.
+
+\resumeSubheading
+{Tools for Mathematical Modelling}{}
+{Paper}{Nov 2023 -- present}
+\vspace{.1cm}
+
+This document introduces essential tools for mathematical modelling.
+
+\resumeSubheading
+{Infinite Hotel Paradox}{}
+{Paper}{Nov 2023 -- present}
+\vspace{.1cm}
+
+The Infinite Hotel Paradox is a theoretical scenario of accommodating an infinite number of guests, prompting discussion on the nature of infinity in relation to infinitely countable sets.
+
+\resumeSubheading
+{A tumbling T-handle in space: the Dzhanibekov effect}{}
+{Paper}{Nov 2023}
+\vspace{.1cm}
+
+The Dzhanibekov Effect refers to the phenomenon where the orientation of an object rotating about an intermediate axis changes unexpectedly.
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+%\resumeSubheading
+%{Name of mobile app}{}
+%{Mobile application}{2024}
+%\resumeItemListStart
+%\resumeItemPaper{The link to the mobile application is \url{}. The source code can be %found on my GitHub.}
+%\resumeItemListEnd
+% maybe use flutter / swift
+
+%\resumeSubheading
+%{Name of game}{}
+%{Website}{2024}
+%\resumeItemListStart
+%\resumeItemPaper{The link to the website is \url{}. The source code can be found on my GitHub.}
+%\resumeItemListEnd
+
+\resumeSubheading
+{\href{https://code.earthengine.google.com/?accept_repo=users/Ryanjoo18/fires_hotspot}{Fires and Hotspots}}{}
+{Google Earth Engine Project}{Dec 2023}
+\vspace{.1cm}
+
+Utilised data from Sentinel-2 satellite to identify hotspots and analyse surrounding areas in Sumatra, Indonesia. Hosted on Google Earth Engine.
+
+\resumeSubheading
+{\href{https://ryanjoo18.github.io/web/}{Personal website}}{}
+{Website}{Oct 2023 -- present}
+\vspace{.1cm}
+
+The source code can be found on my GitHub.
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Achievements}
+\subsection*{Honours}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Young Achievers Leadership Academy (YALA) Silver Scholarship}{}
+{Recipient}{2023}
+
+\resumeSubheading
+{Young Achievers Leadership Academy (YALA) Gold Scholarship}{}
+{Recipient}{2022}
+
+\resumeSubheading
+{International Junior Honor Society (IJHS)}{}
+{Membership}{2022}
+
+\resumeSubheading
+{Young Achievers Leadership Academy (YALA) Gold Scholarship}{}
+{Recipient}{2021}
+
+\resumeSubheading
+{ASEAN Scholarship}{}
+{Recipient}{2020}
+
+\resumeSubheading
+{Malaysian Mensa Society, Mensa International}{}
+{Membership, 180 marks, Test Reference Number: MY023479}{2020}
+
+\resumeSubheading
+{Young Achievers Leadership Academy (YALA) Platinum Scholarship}{}
+{Recipient}{2019}
+\resumeSubHeadingListEnd
+
+\subsection*{Competitions}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Singapore Mathematics Olympiad (SMO)}{}
+{Silver award in Open Section}{2023}
+
+\resumeSubheading
+{Singapore and Asian Schools Math Olympiad (SASMO)}{}
+{Gold award, Top in Singapore}{2023}
+
+\resumeSubheading
+{Australian Mathematics Competition (AMC)}{}
+{High distinction in Senior Division, Best in school}{2023}
+
+\resumeSubheading
+{Singapore Mathematics Olympiad (SMO)}{}
+{Silver award in Senior Section}{2022}
+
+\resumeSubheading
+{Singapore Junior Physics Olympiad (SJPO)}{}
+{Bronze award}{2022}
+
+\resumeSubheading
+{Singapore Physics League (SPhL)}{}
+{Bronze award}{2022}
+
+\resumeSubheading
+{Singapore Junior Chemistry Olympiad (SJCO)}{}
+{Bronze award}{2022}
+
+\resumeSubheading
+{Australian Mathematics Competition (AMC)}{}
+{Prize award in Intermediate Division}{2021}
+
+\resumeSubheading
+{Malaysian Computing Challenge (MCC)}{}
+{Gold award}{2021}
+
+\resumeSubheading
+{Hua Lo Geng Secondary School Mathematics Competition}{}
+{2nd place}{2019}
+
+\resumeSubheading
+{Chen Jingrun's Cup Secondary School Mathematics Competition}{}
+{1st place}{2019}
+
+\resumeSubheading
+{MSSM Chess Championship (Kuala Lumpur Sentul Region)}{}
+{3rd place}{2019}
+\resumeSubHeadingListEnd
+
+%-----------WORKSHOPS-----------------
+\section{Trainings and Workshops Attended}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\href{https://github.com/Ryanjoo18/remote-data-sensing-workshop-2023}{Space Data Series: Remote Sensing Workshop}}{Singapore, SG}
+{Space Faculty}{Dec 2023}
+\resumeItemListStart
+\resumeItem{Lecturer(s)}{Dr. Liew Soo Chin, Dr. Fernando Santos, Dr. Rakesh Kumar Singh, Chia Aik Song, Lee Ken Young, Hou Chen Guang}
+\resumeItemPaper{Introduced to the field of remote sensing and its wide-ranging applications. Gained insights into how satellite imagery and geospatial data are utilised for the monitoring and analysis of natural processes and human activities on Earth.}
+\resumeItemPaper{Gained hands-on experience using Google Earth Engine to analyse and visualise satellite imagery and geospatial data.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Discrete Mathematics and Statistics with Applications}{Singapore, SG}
+{Nanyang Technological University}{May 2023}
+\resumeItemListStart
+\resumeItem{Lecturer(s)}{Prof. Bernhard Schmidt, Dr. Gary Royden Watson Greaves}
+\resumeItemPaper{Introduced to topics in discrete mathematics, optimisation and statistics, including mathematical game theory, matrix games, mathematical models for games and computation of optimal strategies, linear programming, statistical paradoxes, rental harmony, and lottery investment strategy.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Python Programming on Raspberry Pi}{Singapore, SG}
+{Nanyang Technological University}{May 2023}
+\resumeItemListStart
+\resumeItem{Lecturer(s)}{A/Prof. Nicholas Vun}
+\resumeItemPaper{Developed games ran on the Raspberry Pi board using Python programming.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%--------SKILLS------------
+\section{Skills}
+\resumeSubHeadingListStart
+\item{\textbf{Languages}{: English, Chinese, Malay, German, Japanese, Italian}}
+\item{\textbf{Programming languages}{: Python, \LaTeX, R, Java, HTML, CSS, JavaScript}}
+\item{\textbf{Softwares}{: VS Code, GitHub, Overleaf, RStudio, Google Earth Engine}}
+\resumeSubHeadingListEnd
+
+%-----------CCA-----------------
+\section{Activities \& Leadership}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Befrienders Programme (Dunman High School)}{Singapore, SG}
+{Committee member}{Dec 2023 -- Feb 2024}
+\resumeItemListStart
+\resumeItemPaper{}
+\resumeItemListEnd
+
+\resumeSubheading
+{Mathematics Society (Dunman High School)}{Singapore, SG}
+{Member}{Feb 2023 -- June 2024}
+\resumeItemListStart
+\resumeItemPaper{Represented school in competitions and achieved excellent results.}
+\resumeItemPaper{Planned and executed Math Week, an activity aimed at promoting Mathematics to students at the secondary school and Junior College level through games and exhibitions.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Infocomm Club (Dunman High School)}{Singapore, SG}
+{Member}{Feb 2023 -- June 2024}
+\resumeItemListStart
+\resumeItemPaper{Enrolled in a comprehensive course centred on Swift programming, focused on the development of mobile applications.}
+\resumeItemPaper{Participated in a learning journey to Open Governmental Products (OGP), gained insights into the development and design of user-friendly websites and applications.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Chinese Chess Club (Chung Cheng High School (Main))}{Singapore, SG}
+{Committee member}{Jan 2021 -- Aug 2022}
+\resumeItemListStart
+\resumeItemPaper{Actively participated in the strategic planning and proficiently executed a Chinese chess competition, aimed at fostering and cultivating a heightened interest in Chinese chess among the club’s members.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Academic Research Society (Chong Hwa Independent High School)}{Kuala Lumpur, MY}
+{Secretary, Member of school team}{Jan 2019 -- Dec 2020}
+\resumeItemListStart
+\resumeItemPaper{Represented school and country in various Mathematics competitions and achieved excellent results.}
+\resumeItemPaper{Developed, coordinated, and successfully executed a series of meticulously planned academic events, fostering an environment conducive to scholarly discourse and knowledge exchange in Mathematics.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Chess Club (Chong Hwa Independent High School)}{Kuala Lumpur, MY}
+{Member of school team}{Jan 2019 -- Feb 2020}
+\resumeItemListStart
+\resumeItemPaper{Represented school in various chess tournaments and achieved excellent results.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------VOLUNTEERING-----------------
+\section{Community Service}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Springfield Secondary School}{Singapore, SG}
+{Volunteer tutor}{May 2023 -- Nov 2023}
+\resumeItemListStart
+\resumeItemPaper{Tutored 20 students in need of assistance in Mathematics and Science subjects.}
+\resumeItemPaper{Designed and delivered personalised tutoring sessions tailored to individual student needs, targeted specific areas for improvement, provided additional practice materials.}
+\resumeItemPaper{Monitored students' progress, identified areas of improvement, provided constructive feedback to help students overcome challenges and enhance their academic performance.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Brahm Centre}{Singapore, SG}
+{Volunteer}{April 2023 -- Sep 2023}
+\resumeItemListStart
+\resumeItemPaper{Communicated with and provided practical guidance to 10 seniors in utilising mobile phones and mobile application, improvied their digital proficiency and technological competence.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Willing Hearts}{Singapore, SG}
+{Volunteer}{Sep 2022 -- Oct 2022}
+\resumeItemListStart
+\resumeItemPaper{Assisted in operating a daily soup kitchen.}
+\resumeItemPaper{Prepared, cooked and distributed 200 meals every day to the elderly, disabled individuals, low-income families, children from single-parent households, and migrant workers.}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
+
+% Source code: https://gist.github.com/FedericoTartarini/02e61c53c6112b122bc45be650d80d92
+
+% Try to learn SQL, R, use JetBrains IDEs
