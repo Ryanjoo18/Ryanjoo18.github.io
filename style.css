@@ -9,15 +9,24 @@ body {
   color: black;
 }
 
+h1, h2, h3 {
+  color: rgb(55, 94, 187);
+}
+
 footer {
-  font-size: 10px;
-  background-color: rgb(240, 240, 240);
-  padding: 0px;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(55, 94, 187);
+  text-align: left;
   width: 100%;
+}
+
+footer a {
+  color: inherit;
+}
+
+footer a:hover, a:active {
+  color: orange;
 }
 
 a {
@@ -30,62 +39,34 @@ a:visited {
 }
 
 a:hover, a:active {
-  color: rgb(0, 128, 255);
+  color: orange;
 }
 
 .fa {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 /* Style all font awesome icons */
-footer .fa {
+footer .fa-brands, .fa-solid {
+  margin-right: 5px;
   padding: 10px;
-  width: 30px;
+  width: 35px;
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: white;
+  color: rgb(55, 94, 187);
+  background: white;
 }
 
 /* Add a hover effect if you want */
-footer .fa:hover {
-  opacity: 0.7;
+footer .fa-brands:hover {
+  background: orange;
   color: white;
 }
 
-/* Gmail */
-.fa-envelope {
-  background: red;
-}
-
-/* Facebook */
-.fa-facebook {
-  background: #3B5998;
-}
-
-/* Twitter */
-.fa-twitter {
-  background: #55ACEE;
-}
-
-/* GitHub */
-.fa-github {
-  background: black;
-}
-
-/* Instagram */
-.fa-instagram {
-  background: #ff2a7c;
-}
-
-/* LinkedIn */
-.fa-linkedin {
-  background: #0a66c2;
-}
-
-/* Stack Overflow */
-.fa-stack-overflow {
-  background:rgb(24, 44, 223);
+footer .fa-solid:hover {
+  background: orange;
+  color: white;
 }
 
 *{
