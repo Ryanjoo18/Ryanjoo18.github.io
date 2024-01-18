@@ -31,11 +31,11 @@ footer a:hover, a:active {
 
 a {
   text-decoration:none;
-  color: blue;
+  color: rgb(55, 94, 187);
 }
 
 a:visited {
-  color: blue;
+  color: rgb(55, 94, 187);
 }
 
 a:hover, a:active {
