@@ -19,20 +19,6 @@ h2 {
   font-size: 35px;
 }
 
-.footer {
-  font-size: 15px;
-  color: white;
-  background-color: rgb(55, 94, 187);
-  text-align: left;
-}
-
-.footer a {
-  color: inherit;
-}
-
-.footer a:hover, a:active {
-  color: orange;
-}
 
 a {
   text-decoration: none;
@@ -50,28 +36,3 @@ a:hover, a:active {
 .fa {
   margin-right: 5px;
 }
-
-/* Style all font awesome icons */
-.footer .fa-brands, .fa-solid {
-  margin-right: 5px;
-  padding: 10px;
-  width: 18px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  color: rgb(55, 94, 187);
-  background: white;
-}
-
-/* Add a hover effect if you want */
-.footer .fa-brands:hover {
-  background: orange;
-  color: white;
-}
-
-.footer .fa-solid:hover {
-  background: orange;
-  color: white;
-}
-
-
