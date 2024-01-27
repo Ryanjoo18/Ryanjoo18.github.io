@@ -11,7 +11,10 @@
   <link rel="icon" href="files/pics/ryan_pic.png" type="image/x-icon">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
+  <link rel="stylesheet" href="styles/topnav.css" type="text/css">
+  <link rel="stylesheet" href="styles/scrollbar.css" type="text/css">
+
   <!--Font awesome icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -25,49 +28,18 @@
 </head>
 
 <body>
-  <div class="sidebar">
-    <ul class="nav-list">
-      <li>
-        <a href="#biography">
-          <i class='bx bxs-home' ></i>
-          <span class="links_name">Home</span>
-        </a>
-        <span class="tooltip">Home</span>
-      </li>
-      <li>
-        <a href="#publications">
-          <i class='bx bxs-book-alt'></i>
-          <span class="links_name">Publications</span>
-        </a>
-        <span class="tooltip">Publications</span>
-      </li>
-      <li>
-        <a href="#projects">
-          <i class='bx bx-code-curly'></i>
-          <span class="links_name">Projects</span>
-        </a>
-        <span class="tooltip">Projects</span>
-      </li>
-      <li>
-        <a href="#notes">
-          <i class="bx bx-folder"></i>
-          <span class="links_name">Notes</span>
-        </a>
-        <span class="tooltip">Notes</span>
-      </li>
-      <li>
-        <a href="#resources">
-          <i class='bx bxs-file-archive' ></i>
-          <span class="links_name">Resources</span>
-        </a>
-        <span class="tooltip">Resources</span>
-      </li>
-    </ul>
+  <div class="topnav">
+    <a class="active" href="#biography"><strong>Ryan Joo</strong></a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#notes">Notes</a>
+    <a href="#resources">Resources</a>
   </div>
-
+  
   <div class="main">
   
   <center><h1>Ryan Joo's Personal Website</h1></center>
+  <!--(to replace this with my pic, then change h2 -> h1 etc.)-->
   
   <section id="biography">
   <h2>Biography</h2>
@@ -250,7 +222,7 @@
   </section>
   </div>
   
-  <footer>
+  <div class="footer">
   <p>Follow me on</p>
   <a href="mailto:ryanjooruian18@gmail.com" class="fa-solid fa-envelope"></a>
   <a href="https://www.facebook.com/Ryanjoo18" class="fa-brands fa-facebook"></a>
@@ -263,6 +235,6 @@
   <p>&copy; 2023-2024 Ryan Joo <br>
     View the source code on <a href="https://github.com/Ryanjoo18/Ryanjoo18.github.io">GitHub</a>.
   </p>
-  </footer>
+</div>
 </body>
 </html>

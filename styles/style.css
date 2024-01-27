@@ -1,0 +1,77 @@
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+.main {
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: rgb(55, 94, 187);
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.footer {
+  font-size: 15px;
+  color: white;
+  background-color: rgb(55, 94, 187);
+  text-align: left;
+}
+
+.footer a {
+  color: inherit;
+}
+
+.footer a:hover, a:active {
+  color: orange;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(55, 94, 187);
+}
+
+a:visited {
+  color: rgb(55, 94, 187);
+}
+
+a:hover, a:active {
+  color: orange;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+/* Style all font awesome icons */
+.footer .fa-brands, .fa-solid {
+  margin-right: 5px;
+  padding: 10px;
+  width: 18px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(55, 94, 187);
+  background: white;
+}
+
+/* Add a hover effect if you want */
+.footer .fa-brands:hover {
+  background: orange;
+  color: white;
+}
+
+.footer .fa-solid:hover {
+  background: orange;
+  color: white;
+}
+
+
