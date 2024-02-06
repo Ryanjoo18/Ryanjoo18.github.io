@@ -1,33 +1,35 @@
 /* Google Font Link */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet');
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Montserrat';
   font-size: 18px;
   color: black;
   margin: 0px;
 }
 
 .main {
-  padding: 100px;
-}
-
-h1, h2, h3 {
-  color: rgb(55, 94, 187);
+  padding: 8%;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 2em;
+  color: rgb(55, 94, 187);
+  font-weight: 400;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 1.2em;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 1em;
 }
 
+p {
+  font-weight: 400;
+}
 
 a {
   text-decoration: none;
@@ -40,6 +42,10 @@ a:visited {
 
 a:hover, a:active {
   color: orange;
+}
+
+.paper {
+  color: black;
 }
 
 .fa {

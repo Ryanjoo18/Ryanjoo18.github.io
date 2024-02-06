@@ -13,6 +13,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles/style.css" type="text/css">
   <link rel="stylesheet" href="styles/topnav.css" type="text/css">
+  <link rel="stylesheet" href="styles/profile.css">
   <link rel="stylesheet" href="styles/scrollbar.css" type="text/css">
   <link rel="stylesheet" href="styles/footer.css" type="text/css">
 
@@ -38,10 +39,18 @@
   </div>
   
   <div class="main">
-  
-  <center><h1>Ryan Joo's Personal Website</h1></center>
-  <!--(to replace this with my pic, then change h2 -> h1 etc.)-->
-  
+
+  <div class="container">
+    <div class="card">
+      <div class="profile-picture">
+        <img src="files/pics/profile_pic.jpeg" alt="Profile Picture">
+      </div>
+      <p class="name">Ryan Joo Rui An</p>
+      <p class="description">Aspiring Mathematics undergraduate student</p>
+      <p class="description">Dunman High School</p>
+      </div>
+  </div>
+
   <section id="biography">
   <h2>Biography</h2>
   <p>I am a high-school student currently studying for my A Levels in Singapore, a recipient of the <a href="https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarships">ASEAN Scholarship</a> offered by the Ministry of Education of Singapore. A complete CV is available <a href="files/cv/Academic_CV.pdf">here</a>.</p>
@@ -65,28 +74,28 @@
   <h2>Publications</h2>
   <h3>Books</h3>
   <dl>
-    <dt><p><a href="files/publications/Mathematics_Olympiad.pdf"><strong>The Road to Mastery: Mathematics Olympiad</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href="files/publications/Mathematics_Olympiad.pdf"><strong>The Road to Mastery: Mathematics Olympiad</strong></a></p></dt>
     <dd><p>This book presents strategic approaches for excelling in Mathematics Olympiad competitions, providing valuable insights and techniques.</p></dd>
 
-    <dt><p><a href="files/publications/University_Mathematics.pdf"><strong>Mathematics: A University-Level Introduction</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href="files/publications/University_Mathematics.pdf"><strong>Mathematics: A University-Level Introduction</strong></a></p></dt>
     <dd><p>Introducing university-level Mathematics concepts, this book serves as a comprehensive guide, aiding in the understanding and application of advanced mathematical principles.</p></dd>
 
-    <dt><p><a href="files/publications/University_Physics.pdf"><strong>Physics: A University-Level Introduction</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href="files/publications/University_Physics.pdf"><strong>Physics: A University-Level Introduction</strong></a></p></dt>
     <dd><p>Presenting a university-level introduction to Physics, this book offers comprehensive insights and knowledge, facilitating a solid grasp of fundamental principles.</p></dd>
   </dl>
 
   <h3>Papers</h3>
   <dl>
-    <dt><p><a href=""><strong>Tools for Mathematical Modelling</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href=""><strong>Tools for Mathematical Modelling</strong></a></p></dt>
     <dd><p>This paper introduces essential tools for mathematical modelling.</p></dd>
 
-    <dt><p><a href=""><strong>Infinite Hotel Paradox</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href=""><strong>Infinite Hotel Paradox</strong></a></p></dt>
     <dd><p>The Infinite Hotel Paradox is a theoretical scenario of accommodating an infinite number of guests, prompting discussion on the nature of infinity in relation to infinitely countable sets.</p></dd>
 
-    <dt><p><a href="files/publications/Dzhanibekov_effect.pdf"><strong>A tumbling T-handle in space: the Dzhanibekov effect</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href="files/publications/Dzhanibekov_effect.pdf"><strong>A tumbling T-handle in space: the Dzhanibekov effect</strong></a></p></dt>
     <dd><p>The Dzhanibekov Effect refers to the phenomenon where the orientation of an object rotating about an intermediate axis changes unexpectedly.</p></dd>
 
-    <dt><p><a href="files/publications/2023_DH024_WR.pdf"><strong>Empowering Silver Shoppers: Improving the Unmanned Convenience Store Experience for Seniors in Singapore</strong></a></p></dt>
+    <dt><p><a class="paper" target="_blank" href="files/publications/2023_DH024_WR.pdf"><strong>Empowering Silver Shoppers: Improving the Unmanned Convenience Store Experience for Seniors in Singapore</strong></a></p></dt>
     <dd><p>This paper was written as part of <a href="https://www.seab.gov.sg/docs/default-source/national-examinations/syllabus/alevel/2023syllabus/8808_y23_sy.pdf">H1 Project Work</a>, a subject of the Singapore-Cambridge GCE A-Level Examination.</p></dd>
   </dl>
   
@@ -96,9 +105,9 @@
 
   <section id="projects">
   <h2>Projects</h2>
-  <p><a href="https://ryanjoo18.github.io/snake/"><strong>Snake game</strong></a></p>
+  <p><a class="paper" target="_blank" href="https://ryanjoo18.github.io/snake/"><strong>Snake game</strong></a></p>
   
-  <p><a href=""><strong>Fires and Hotspots</strong></a></p>
+  <p><a class="paper" target="_blank" href=""><strong>Fires and Hotspots</strong></a></p>
   </section>
   
   <hr>
@@ -106,8 +115,10 @@
   <section id="notes">
   <h2>Notes</h2>
 
-  <h3>Academic Notes</h3>
-  <h4>Singapore-Cambridge A-Level</h4>
+  <h3>Singapore-Cambridge GCE A-Level</h3>
+  <p>For my A-Level, I have taken the PCME subject combination, which comprises H2 Physics, H2 Chemistry, H2 Mathematics and H2 Economics, as well as H3 Mathematics.</p>
+  <p>The syllabus for each subject can be found on the <a href="https://www.seab.gov.sg/home/examinations/gce-a-level">website</a> of the Singapore Examinations and Assessment Board (SEAB).</p>
+
   <table>
     <tr>
       <th>Subject</th>
@@ -135,11 +146,21 @@
     </tr>
     <tr>
       <td>H3 Mathematics</td>
-      <td><a href="">Notes</a></td>
+      <td><a href="">Notes</a> (Coming soon)</td>
+    </tr>
+    <tr>
+      <td>H3 Physics</td>
+      <td><a href="">Notes</a> (Coming soon)</td>
+    </tr>
+    <tr>
+      <td>H3 Chemistry</td>
+      <td><a href="">Notes</a> (Coming soon)</td>
     </tr>
   </table>
 
-  <h4>Singapore-Cambridge O-Level</h4>
+  <h3>Singapore-Cambridge GCE O-Level</h3>
+  <p>For my O-Level, </p>
+
   <table>
     <tr>
       <th>Subject</th>
@@ -210,15 +231,20 @@
   <h4>Competitions</h4>
   <ul>
     <li><p><strong>Singapore Mathematics Olympiad (SMO)</strong>: <a href="files/resources/math/Singapore-Mathematics-Olympiad-SMO.zip">Past year papers</a></p></li>
-    <li><p><strong>Chen Jingrun's Cup Mathematics Competition</strong>: <a href="https://mathcompetition.wixsite.com/chenjingrun/blank-3">Past year papers</a></p></li>
     <li><p><strong>Asian Pacific Mathematical Olympiad (APMO)</strong>: <a href="https://www.apmo-official.org/problems">Past year papers</a></p></li>
-    <li><p><strong>香港華羅庚金杯少年數學邀請賽</strong>: <a href="https://www.hkhcm.org/previous_questions/">Past year papers</a></p></li>
+    <li><p><strong>Hong Kong Hua Luo-Geng Cup Mathematics Competition 香港華羅庚金杯少年數學邀請賽</strong>: <a href="https://www.hkhcm.org/previous_questions/">Past year papers</a></p></li>
     <li><p><strong>Hua Lo Geng Mathematics Competition for Secondary Schools in Selangor and Kuala Lumpur 雪隆中学华罗庚杯数学比赛(马来西亚)</strong>: <a href="https://www.newera.edu.my/competition/hua_lo_geng/ch/passyear.php">Past year papers</a></p></li>
+    <li><p><strong>Chen Jingrun's Cup Mathematics Competition</strong>: <a href="https://mathcompetition.wixsite.com/chenjingrun/blank-3">Past year papers</a></p></li>
     <li><p><strong>Asia Pacific Mathematical Olympiad for Primary Schools (APMOPS)</strong>: <a href="files/resources/math/Asia-Pacific-Mathematical-Olympiad-for-Primary-Schools-APMOPS/APMOPS_2001_2012.pdf">Past year papers</a></p></li>
-    <li><p><strong>Mathematics Admissions Test (MAT)</strong>: <a href="https://www.maths.ox.ac.uk/study-here/undergraduate-study/maths-admissions-test">Past year papers</a></p></li>
     <li><p><strong>American Mathematics Competitions</strong>: <a href="https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions">Past year papers</a> of AMC 8, AMC 10, AMC 12, AHSME, AIME, USAMO, and USAJMO</p></li>
     <li><p><strong>Berkeley Math Tournament</strong>: <a href="https://berkeley.mt/archives/">Past year papers</a></p></li>
     <li><p><strong>William Lowell Putnam Mathematical Competition</strong>: <a href="https://kskedlaya.org/putnam-archive/">Past year papers</a></p></li>
+  </ul>
+
+  <h4>Examinations/Tests</h4>
+  <ul>
+    <li><p><strong>Mathematics Admissions Test (MAT)</strong>: <a href="https://www.maths.ox.ac.uk/study-here/undergraduate-study/maths-admissions-test">About</a>, <a href="https://www.maths.ox.ac.uk/study-here/undergraduate-study/maths-admissions-test">Past year papers</a></p></li>
+    <li><p><strong>Sixth Term Examination Paper (STEP)</strong>: <a href="https://maths.org/step/">About</a></p></li>
   </ul>
   
   <h4>Notes</h4>
