@@ -1,11 +1,12 @@
 /* Add background color to the top navigation */
 .topnav {
-  background-color: rgba(255,255,255,0.8);
+  background-color: rgb(55, 94, 187, 0.8);
   position: fixed;
-  overflow: hidden;
-  margin-left: 100px;
+  overflow: auto;
+  margin: auto;
+  width: 100%;
 }
-  
+
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -15,9 +16,10 @@
   text-decoration: none;
   border-bottom: 3px solid transparent;
 }
-  
+
 /* Change the color of links on hover */
 .topnav a:hover {
   color: black;
   border-bottom: 3px solid orange;
+  background-color: rgba(115, 149, 229, 0.8);
 }
