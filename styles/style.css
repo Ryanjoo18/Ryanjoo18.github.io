@@ -1,9 +1,17 @@
 /* Google Font Link */
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet');
 
 body {
   font-family: "Montserrat";
+=======
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet');
+
+body {
+  font-family: 'Montserrat';
+>>>>>>> ad2748c9feb846965114608860b0c1f09fe12859
   font-size: 1em;
   color: black;
   margin: 0px;
