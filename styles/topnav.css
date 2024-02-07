@@ -1,23 +1,58 @@
-/* Add background color to the top navigation */
-.topnav {
-  background-color: rgba(255,255,255,0.8);
-  position: fixed;
-  overflow: hidden;
-  margin-left: 8%;
+.Navbar {
+  background-color: rgb(55, 94, 187);
+  display: flex;
+  padding: 16px;
+  color: white;
 }
-  
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 10px 16px;
-  text-decoration: none;
-  border-bottom: 3px solid transparent;
+
+.Navbar__Link {
+  padding-right: 8px;
 }
-  
+
+.Navbar__Link a {
+  color: white
+}
+
 /* Change the color of links on hover */
-.topnav a:hover {
-  color: black;
-  border-bottom: 3px solid orange;
+.Navbar__Link a:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+
+.Navbar__Items {
+  display: flex;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+
+.Navbar__Link-brand {
+  padding-right: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+    
+.Navbar__Items {
+    display:none;
+  }
+    
+.Navbar__Items--right {
+    margin-left:0;
+  }
+    
+.Navbar__ToggleShow {
+    display: flex;
+  }
+    
+.Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
 }

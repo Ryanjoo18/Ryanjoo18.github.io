@@ -4,13 +4,13 @@
 
 body {
   font-family: 'Montserrat';
-  font-size: 18px;
+  font-size: 1em;
   color: black;
   margin: 0px;
 }
 
 .main {
-  padding: 8%;
+  padding: 5%;
 }
 
 h2 {
