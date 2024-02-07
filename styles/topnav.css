@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Add background color to the top navigation */
 .topnav {
   background-color: rgb(55, 94, 187, 0.8);
@@ -23,63 +22,4 @@
   color: black;
   border-bottom: 3px solid orange;
   background-color: rgba(115, 149, 229, 0.8);
-=======
-.Navbar {
-  background-color: rgb(55, 94, 187);
-  display: flex;
-  padding: 16px;
-  color: white;
-}
-
-.Navbar__Link {
-  padding-right: 8px;
-}
-
-.Navbar__Link a {
-  color: white
-}
-
-/* Change the color of links on hover */
-.Navbar__Link a:hover {
-  color: orange;
-  border-bottom: 2px solid orange;
-}
-
-.Navbar__Items {
-  display: flex;
-}
-
-.Navbar__Link-toggle {
-  display: none;
-}
-
-.Navbar__Link-brand {
-  padding-right: 30px;
-}
-
-@media only screen and (max-width: 768px) {
-  .Navbar__Items,
-  .Navbar {
-    flex-direction: column;
-  }
-    
-.Navbar__Items {
-    display:none;
-  }
-    
-.Navbar__Items--right {
-    margin-left:0;
-  }
-    
-.Navbar__ToggleShow {
-    display: flex;
-  }
-    
-.Navbar__Link-toggle {
-    align-self: flex-end;
-    display: initial;
-    position: absolute;
-    cursor: pointer;
-   } 
->>>>>>> ad2748c9feb846965114608860b0c1f09fe12859
 }
