@@ -4,6 +4,7 @@
   background-color: rgb(55, 94, 187);
   text-align: center;
   padding: 10px;
+  bottom: 0; /* Position the navbar at the bottom of the page */
 }
 
 .footer a {
