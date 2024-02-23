@@ -2,11 +2,12 @@ document.getElementById("scroll-to-bottom-button").addEventListener("click", fun
     document.body.scrollIntoView({ behavior: "smooth", block: "end" });
 });
 
-function classToggle() {
-    const navs = document.querySelectorAll('.Navbar__Items')
-    
-    navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
   }
-  
-  document.querySelector('.Navbar__Link-toggle')
-    .addEventListener('click', classToggle);

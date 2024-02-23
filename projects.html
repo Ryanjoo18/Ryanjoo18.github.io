@@ -20,7 +20,7 @@
     <!--Font awesome icons-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -40,14 +40,17 @@
 
   <body>
     <!-- Header -->
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
       <a class="home" href="index.html"
         ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
       /></a>
       <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
+      <a class="active" href="projects.html">Projects</a>
       <a href="notes.html">Notes</a>
       <a href="writing.html">Writing</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="main">
@@ -58,12 +61,6 @@
           target="_blank"
           href="https://ryanjoo18.github.io/snake/"
           ><strong>Snake game</strong></a
-        >
-      </p>
-
-      <p>
-        <a class="paper" target="_blank" href=""
-          ><strong>Fires and Hotspots</strong></a
         >
       </p>
     </div>

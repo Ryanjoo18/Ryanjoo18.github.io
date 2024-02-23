@@ -20,7 +20,7 @@
     <!--Font awesome icons-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -40,7 +40,7 @@
 
   <body>
     <!-- Header -->
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
       <a class="home" href="index.html"
         ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
       /></a>
@@ -48,6 +48,9 @@
       <a href="projects.html">Projects</a>
       <a href="notes.html">Notes</a>
       <a href="writing.html">Writing</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="main">
@@ -72,7 +75,7 @@
           >ASEAN Scholarship</a
         >
         offered by the Ministry of Education of Singapore. A complete CV is
-        available <a target="_blank" href="files/cv/Academic_CV.pdf">here</a>.
+        available <a target="_blank" href="files/cv/CV.pdf">here</a>.
       </p>
 
       <p>
@@ -121,8 +124,7 @@
         href="https://twitter.com/ryanjoo181"
         class="fa-brands fa-x-twitter"
         aria-label="Twitter"
-        >></a
-      >
+      ></a>
       <a
         href="https://github.com/Ryanjoo18/"
         class="fa-brands fa-github"

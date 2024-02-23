@@ -20,7 +20,7 @@
     <!--Font awesome icons-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -40,18 +40,26 @@
 
   <body>
     <!-- Header -->
-    <div class="topnav">
+    <div class="topnav" id="myTopnav">
       <a class="home" href="index.html"
         ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
       /></a>
       <a href="publications.html">Publications</a>
       <a href="projects.html">Projects</a>
       <a href="notes.html">Notes</a>
-      <a href="writing.html">Writing</a>
+      <a class="active" href="writing.html">Writing</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <div class="main">
       <h1>Writing</h1>
+      <h2>Advice</h2>
+      <ul>
+        <li><p><a href="">Resources</a>. A list of useful resources for Mathematics, Physics and programming.</p></li>
+        <li><p><a href="">Talks & Workshops Attended</a>. A list of talks and workshops that I have attended, including a summary for each.</p></li>
+      </ul>
     </div>
   </body>
 </html>

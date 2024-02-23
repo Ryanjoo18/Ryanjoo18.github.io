@@ -16,7 +16,7 @@
 }
 
 /* Style all font awesome icons */
-.footer .fa-brands, .fa-solid {
+.footer .fa-brands, .footer .fa-solid {
   margin-right: 5px;
   padding: 10px;
   width: 16px;
@@ -28,12 +28,7 @@
 }
 
 /* Add a hover effect if you want */
-.footer .fa-brands:hover {
-  background: orange;
-  color: white;
-}
-
-.footer .fa-solid:hover {
+.footer .fa-brands:hover, .footer .fa-solid:hover {
   background: orange;
   color: white;
 }
