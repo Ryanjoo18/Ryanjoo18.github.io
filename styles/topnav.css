@@ -1,6 +1,6 @@
 /* Add background color to the top navigation */
 .topnav {
-  position: fixed;
+  position: sticky;
   background-color: white;
   overflow: auto;
   margin: auto;
