@@ -68,3 +68,20 @@ th {
 tr:nth-child(even) {
   background-color: #efeded;
 }
+
+#myBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
