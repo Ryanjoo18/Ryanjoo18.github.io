@@ -6,12 +6,13 @@
     <meta name="description" content="Welcome to my personal website!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ryan Joo</title>
+    <title>Ryan Joo &bull; Projects</title>
     <link rel="icon" href="files/pics/logo.png" type="image/x-icon" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/topnav.css" type="text/css" />
+    <link rel="stylesheet" href="styles/topnav.css" />
+    <link rel="stylesheet" href="styles/sidenav.css" type="text/css" />
     <link rel="stylesheet" href="styles/profile.css" />
     <link rel="stylesheet" href="styles/scrollbar.css" type="text/css" />
     <link rel="stylesheet" href="styles/footer.css" type="text/css" />
@@ -39,31 +40,129 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <div class="topnav" id="myTopnav">
-      <a class="home" href="index.html"
-        ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
-      /></a>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">About</a>
       <a href="publications.html">Publications</a>
-      <a class="active" href="projects.html">Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="notes.html">Notes</a>
-      <a href="writing.html">Writing</a>
-      <a href="blog.html">Blog</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <div class="topnav">
+      <button class="btn-sidenav" onclick="openNav()">
         <i class="fa fa-bars"></i>
-      </a>
+      </button>
     </div>
 
     <div class="main">
       <h1>Projects</h1>
-      <p>
-        <a
-          class="paper"
-          target="_blank"
-          href="https://ryanjoo18.github.io/snake/"
-          ><strong>Snake game</strong></a
-        >
-      </p>
+      <h2>Mathematics</h2>
+      <dl>
+        <dt>
+          <p class="pub">
+            <a
+              class="paper"
+              target="_blank"
+              href="files/projects/On_the_Google_PageRank_Algorithm.pdf"
+              >On the Google PageRank Algorithm</a
+            >
+          </p>
+        </dt>
+        <dd></dd>
+
+        <dt>
+          <p class="pub">
+            <a class="paper" target="_blank" href=""
+              >On the Infinite Hotel Paradox</a
+            >
+          </p>
+        </dt>
+        <dd>
+          <p>
+            The Infinite Hotel Paradox is a theoretical scenario of
+            accommodating an infinite number of guests, prompting discussion on
+            the nature of infinity in relation to infinitely countable sets.
+          </p>
+        </dd>
+      </dl>
+      
+      <h2>Physics</h2>
+      <dl>
+        <dt>
+          <p class="pub"><a href="">On Ion Beams</a></p>
+        </dt>
+
+        <dt>
+          <p class="pub"><a href="">On the Workings of Interferometers</a></p>
+        </dt>
+
+        <dt>
+          <p class="pub">
+            <a
+              class="paper"
+              target="_blank"
+              href="files/projects/On_the_Dzhanibekov_Effect.pdf"
+              >On the Dzhanibekov effect: A Tumbling T-handle in Space</a
+            >
+          </p>
+        </dt>
+        <dd>
+          <p>
+            The Dzhanibekov Effect refers to the phenomenon where the
+            orientation of an object rotating about an intermediate axis changes
+            unexpectedly.
+          </p>
+        </dd>
+      </dl>
+
+      <h2>Data Analysis</h2>
+      <dl>
+        <dt>
+          <p>
+            <a
+              class="paper"
+              target="_blank"
+              href="https://colab.research.google.com/drive/1WeEhAzjvUZEbFdthh3RqKrV3fEH0eD78?usp=sharing"
+              ><strong
+                >Analysing Happiness: Understanding Determinants Across Global
+                Contexts</strong
+              ></a
+            >
+          </p>
+        </dt>
+        <dd>
+          <p>
+            Jupyter Notebook project which analyses data from World Happiness
+            Report 2023 to determine the most important factor contributing to
+            happiness of a country.
+          </p>
+        </dd>
+      </dl>
+
+      <h2>Programming</h2>
+      <dl>
+        <dt>
+          <p>
+            <a
+              class="paper"
+              target="_blank"
+              href="https://ryanjoo18.github.io/snake/"
+              ><strong>Snake game</strong></a
+            >
+          </p>
+        </dt>
+        <dd>
+          <p>
+            A simple snake game implemented in HTML, CSS, and JavaScript. The
+            player controls the snake by using arrow keys to move it up, down,
+            left or right.
+          </p>
+        </dd>
+      </dl>
     </div>
   </body>
 </html>

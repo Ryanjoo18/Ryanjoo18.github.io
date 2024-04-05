@@ -22,9 +22,7 @@
   width: 16px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50%;
-  color: rgb(55, 94, 187);
-  background: white;
+  color: white;
 }
 
 /* Add a hover effect if you want */

@@ -6,12 +6,13 @@
     <meta name="description" content="Welcome to my personal website!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ryan Joo</title>
+    <title>Ryan Joo &bull; About</title>
     <link rel="icon" href="files/pics/logo.png" type="image/x-icon" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/topnav.css" type="text/css" />
+    <link rel="stylesheet" href="styles/topnav.css" />
+    <link rel="stylesheet" href="styles/sidenav.css" type="text/css" />
     <link rel="stylesheet" href="styles/profile.css" />
     <link rel="stylesheet" href="styles/scrollbar.css" type="text/css" />
     <link rel="stylesheet" href="styles/footer.css" type="text/css" />
@@ -39,24 +40,27 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <div class="topnav" id="myTopnav">
-      <a class="home" href="index.html"
-        ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
-      /></a>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">About</a>
       <a href="publications.html">Publications</a>
       <a href="projects.html">Projects</a>
       <a href="notes.html">Notes</a>
-      <a href="writing.html">Writing</a>
-      <a href="blog.html">Blog</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <!-- Use any element to open the sidenav -->
+    <div class="topnav">
+      <button class="btn-sidenav" onclick="openNav()">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
 
     <div class="main">
+      <h1>Biography</h1>
+      <!--
       <div class="container">
         <div class="card">
           <div class="profile-picture">
@@ -67,11 +71,10 @@
           <p class="description">Dunman High School</p>
         </div>
       </div>
-
-      <h1>Biography</h1>
+      -->
       <p>
-        I am a high-school student currently studying for my A Levels in
-        Singapore, a recipient of the
+        This is the home page of Ryan Joo Rui An. I am a high-school student
+        currently studying for my A Levels in Singapore, a recipient of the
         <a
           target="_blank"
           href="https://www.moe.gov.sg/financial-matters/awards-scholarships/asean-scholarships"
@@ -93,6 +96,15 @@
         >.
       </p>
 
+      <figure>
+        <img
+          src="files/pics/nine-point-circle.svg"
+          alt="Nine point circle"
+          style="width: 100%"
+        />
+        <figcaption>Nine point circle</figcaption>
+      </figure>
+
       <h2>Education</h2>
       <p>
         <i class="fa fa-graduation-cap"></i>Dunman High School, Singapore
@@ -108,7 +120,7 @@
       </p>
 
       <h2>Interests</h2>
-      <p>Number Theory</p>
+      <p>Number Theory, Geometry</p>
     </div>
 
     <div class="footer">

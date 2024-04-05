@@ -6,12 +6,13 @@
     <meta name="description" content="Welcome to my personal website!" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ryan Joo</title>
+    <title>Ryan Joo &bull; Notes</title>
     <link rel="icon" href="files/pics/logo.png" type="image/x-icon" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/topnav.css" type="text/css" />
+    <link rel="stylesheet" href="styles/topnav.css" />
+    <link rel="stylesheet" href="styles/sidenav.css" type="text/css" />
     <link rel="stylesheet" href="styles/profile.css" />
     <link rel="stylesheet" href="styles/scrollbar.css" type="text/css" />
     <link rel="stylesheet" href="styles/footer.css" type="text/css" />
@@ -39,29 +40,27 @@
   </head>
 
   <body>
-    <!-- Header -->
-    <div class="topnav" id="myTopnav">
-      <a class="home" href="index.html"
-        ><img src="files/pics/logo.png" alt="Profile Picture" height="15px"
-      /></a>
+    <!-- Sidenav -->
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">About</a>
       <a href="publications.html">Publications</a>
       <a href="projects.html">Projects</a>
-      <a class="active" href="notes.html">Notes</a>
-      <a href="writing.html">Writing</a>
-      <a href="blog.html">Blog</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="notes.html">Notes</a>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <div class="topnav">
+      <button class="btn-sidenav" onclick="openNav()">
         <i class="fa fa-bars"></i>
-      </a>
+      </button>
     </div>
 
     <div class="main">
       <h1>Notes</h1>
-
-      <h2>Personal Notes</h2>
-      <ul>
-        <li><p><a href="">Data Analysis</a></p></li>
-        <li><p><a href="">Astronomy Olympiad</a></p></li>
-      </ul>
+      <p>Some notes I have taken when in school. Feel free to refer to them!</p>
 
       <h2>High School</h2>
       <p>
@@ -147,6 +146,30 @@
 
       <ul>
         <li><p></p></li>
+      </ul>
+
+      <h2>Advice</h2>
+      <ul>
+        <li>
+          <p class="pub">
+            <a class="paper" target="_blank" href="">Resources</a>
+          </p>
+          <p>
+            A list of useful resources for Mathematics, Physics and programming.
+          </p>
+        </li>
+
+        <li>
+          <p class="pub">
+            <a class="paper" target="_blank" href=""
+              >Talks & Workshops Attended</a
+            >
+          </p>
+          <p>
+            A list of talks and workshops that I have attended, including a
+            summary for each.
+          </p>
+        </li>
       </ul>
     </div>
   </body>
