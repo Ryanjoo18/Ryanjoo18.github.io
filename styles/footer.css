@@ -9,6 +9,7 @@
 
 .footer a {
   color: inherit;
+  transition: 0.3s;
 }
 
 .footer a:hover, a:active {
@@ -17,9 +18,9 @@
 
 /* Style all font awesome icons */
 .footer .fa-brands, .footer .fa-solid {
-  margin-right: 5px;
   padding: 10px;
   width: 16px;
+  border-radius: 25%;
   text-align: center;
   text-decoration: none;
   color: white;
