@@ -79,6 +79,13 @@ tr:nth-child(even) {
   background-color: #efeded;
 }
 
+.home-art {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 .book-item {
   padding: 10px;
   background-color: rgb(234, 244, 248);
