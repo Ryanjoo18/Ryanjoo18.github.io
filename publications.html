@@ -1,148 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Ryan Joo" />
-    <meta name="description" content="Welcome to my personal website!" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Ryan Joo &bull; Publications</title>
-    <link rel="icon" href="files/pics/logo.png" type="image/x-icon" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Ryan Joo" />
+  <meta name="description" content="Welcome to my personal website!" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/topnav.css" />
-    <link rel="stylesheet" href="styles/sidenav.css" type="text/css" />
-    <link rel="stylesheet" href="styles/profile.css" />
-    <link rel="stylesheet" href="styles/scrollbar.css" type="text/css" />
-    <link rel="stylesheet" href="styles/footer.css" type="text/css" />
-    <link rel="stylesheet" href="styles/profile.css" type="text/css" />
+  <title>Ryan Joo &bull; About</title>
+  <link rel="icon" href="/files/pics/logo.png" type="image/x-icon" />
 
-    <!--Font awesome icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Boxicons CDN Link -->
-    <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/style.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav-bar.css" />
+  <link rel="stylesheet" href="/styles/profile.css" />
+  <link rel="stylesheet" href="/styles/scrollbar.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/profile.css" type="text/css" />
 
-    <!--JavaScript-->
-    <script type="text/javascript" src="script/script.js"></script>
-  </head>
+  <!--Font awesome icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Boxicons CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 
-  <body>
-    <!-- Sidenav -->
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="index.html">About</a>
-      <a href="publications.html">Publications</a>
-      <a href="projects.html">Projects</a>
-      <a href="notes.html">Notes</a>
-    </div>
+  <!--JavaScript-->
+  <script type="text/javascript" src="/script/script.js"></script>
+</head>
 
-    <!-- Use any element to open the sidenav -->
-    <div class="topnav">
-      <button class="btn-sidenav" onclick="openNav()">
-        <i class="fa fa-bars"></i>
-      </button>
-    </div>
+<body>
+  <!-- Navigation bar -->
+  <div id="nav-menu-links" class="nav-menu-links">
+    <a href="/index.html">About</a>
+    <a href="/publications.html" class="active">Publications</a>
+    <a href="/projects.html">Projects</a>
+    <a href="/notes.html">Notes</a>
+    <a href="/blog.html">Blog</a>
+    <a href="javascript:void(0);" id="nav-button" class="nav-button" aria-label="Toggle navigation"
+      onclick="navButton()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
-    <div class="main">
-      <h1>Publications</h1>
-      <h2>Books</h2>
-      <div class="book-item">
-        <p class="title">
-          <a
-            class="paper"
-            target="_blank"
-            href="publications/labyrinth.html"
-            >In The Labyrinth</a
-          >
-        </p>
-        <p class="author">Ryan Joo Rui An</p>
-        <p class="desc">
-          Introducing university-level Mathematics concepts, this book serves as
-          a comprehensive guide, aiding in the understanding and application of
-          advanced mathematical principles.
-        </p>
-      </div>
-
-      <div class="book-item">
-        <p class="title">
-          <a
-            class="paper"
-            target="_blank"
-            href="/publications/math-oly.html"
-            >Mathematics Olympiad: A Guidebook</a
-          >
-        </p>
-        <p class="author">Ryan Joo Rui An</p>
-        <p class="desc">
-          This book presents strategic approaches for excelling in mathematics
-          olympiad competitions, providing valuable insights and techniques.
-        </p>
-      </div>
-
-      <div class="book-item">
-        <p class="title">
-          <a
-            class="paper"
-            target="_blank"
-            href="/publications/phy-oly.html"
-            >Physics Olympiad: A Guidebook</a
-          >
-        </p>
-        <p class="author">Ryan Joo Rui An</p>
-        <p class="desc">
-          This book presents strategic approaches for excelling in physics
-          olympiad competitions, providing valuable insights and techniques.
-        </p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <p>Follow me on</p>
-      <a
-        href="mailto:ryanjooruian18@gmail.com"
-        class="fa-solid fa-envelope"
-        aria-label="Email"
-      ></a>
-      <a
-        href="https://github.com/Ryanjoo18/"
-        class="fa-brands fa-github"
-        aria-label="GitHub"
-      ></a>
-      <a
-        href="https://www.facebook.com/Ryanjoo18"
-        class="fa-brands fa-facebook"
-        aria-label="Facebook"
-      ></a>
-      <a
-        href="https://www.instagram.com/ryan.joo18/"
-        class="fa-brands fa-instagram"
-        aria-label="Instagram"
-      ></a>
-      <a
-        href="https://www.linkedin.com/in/ryan-joo-rui-an/"
-        class="fa-brands fa-linkedin"
-        aria-label="LinkedIn"
-      ></a>
-      <p>
-        Copyright &copy;
-        <a href="https://github.com/Ryanjoo18/Ryanjoo18.github.io">Ryan Joo</a>
-        2023-2024.
+  <div class="main">
+    <h1>Publications</h1>
+    <h2>Books</h2>
+    <div class="book-item">
+      <p class="title">
+        <a class="paper" target="_blank" href="/publications/fons.html">Fons</a>
+      </p>
+      <p class="author">Ryan Joo Rui An</p>
+      <p class="desc">
+        Introducing university-level Mathematics concepts, this book serves as
+        a comprehensive guide, aiding in the understanding and application of
+        advanced mathematical principles.
       </p>
     </div>
-  </body>
+
+    <div class="book-item">
+      <p class="title">
+        <a class="paper" target="_blank" href="/publications/math-oly.html">Mathematics Olympiad: A Guidebook</a>
+      </p>
+      <p class="author">Ryan Joo Rui An</p>
+      <p class="desc">
+        This book presents strategic approaches for excelling in mathematics
+        olympiad competitions, providing valuable insights and techniques.
+      </p>
+    </div>
+
+    <div class="book-item">
+      <p class="title">
+        <a class="paper" target="_blank" href="/publications/phy-oly.html">Physics Olympiad: A Guidebook</a>
+      </p>
+      <p class="author">Ryan Joo Rui An</p>
+      <p class="desc">
+        This book presents strategic approaches for excelling in physics
+        olympiad competitions, providing valuable insights and techniques.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Follow me on</p>
+    <a href="mailto:ryanjooruian18@gmail.com" class="fa-solid fa-envelope" aria-label="Email"></a>
+    <a href="https://github.com/Ryanjoo18/" class="fa-brands fa-github" aria-label="GitHub"></a>
+    <a href="https://www.facebook.com/Ryanjoo18" class="fa-brands fa-facebook" aria-label="Facebook"></a>
+    <a href="https://www.instagram.com/ryan.joo18/" class="fa-brands fa-instagram" aria-label="Instagram"></a>
+    <a href="https://www.linkedin.com/in/ryan-joo-rui-an/" class="fa-brands fa-linkedin" aria-label="LinkedIn"></a>
+    <p>
+      Copyright &copy;
+      <a href="https://github.com/Ryanjoo18/Ryanjoo18.github.io">Ryan Joo</a>
+      2023-2024.
+    </p>
+  </div>
+</body>
+
 </html>

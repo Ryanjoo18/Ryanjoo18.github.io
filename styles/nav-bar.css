@@ -1,0 +1,76 @@
+/* Navigation menu */
+.nav-menu-links {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  overflow: hidden;
+  /* hide excess content */
+}
+
+/* The navigation menu links */
+.nav-menu-links a {
+  float: left;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Change the color of links on hover */
+.nav-menu-links a:hover {
+  color: #000000;
+  background-color: rgb(205, 221, 255);
+}
+
+/* Add an active class to highlight the current page */
+.nav-menu-links a.active {
+  background-color: rgb(55, 94, 187);
+  color: white;
+}
+
+/* Hide the button that should open and close the navigation bar on small screens */
+.nav-menu-links .nav-button {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links. Show the button that opens and closes the navigation bar */
+@media screen and (max-width: 600px) {
+  .nav-menu-links a {
+    display: none;
+  }
+
+  .nav-menu-links a.nav-button {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .nav-menu-links.responsive {
+    position: relative;
+  }
+
+  .nav-menu-links.responsive a.nav-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-menu-links.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.nav-button {
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 20%;
+}

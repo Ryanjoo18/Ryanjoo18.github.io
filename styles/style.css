@@ -36,17 +36,13 @@ a {
   color: rgb(55, 94, 187);
 }
 
-a:visited {
-  color: black;
-}
-
 a:hover,
 a:active {
   color: orange;
 }
 
 .paper {
-  color: black;
+  text-decoration: underline;
 }
 
 .pub {
@@ -88,7 +84,7 @@ tr:nth-child(even) {
 
 .book-item {
   padding: 10px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(226, 237, 253);
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0px 1px 3px #5e5e5e;
