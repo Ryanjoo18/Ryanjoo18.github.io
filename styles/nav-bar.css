@@ -2,8 +2,9 @@
 .nav-menu-links {
   width: 100%;
   position: relative;
-  background-color: black;
+  background-color: inherit;
   overflow: hidden;
+  box-shadow: 0px 0px 5px 1px #dfdede;
   /* hide excess content */
 }
 
@@ -21,13 +22,12 @@
 /* Change the color of links on hover */
 .nav-menu-links a:hover {
   color: #000000;
-  background-color: rgb(205, 221, 255);
 }
 
 /* Add an active class to highlight the current page */
 .nav-menu-links a.active {
-  background-color: rgb(55, 94, 187);
-  color: white;
+  font-weight: 700;
+  color: #000000;
 }
 
 /* Hide the button that should open and close the navigation bar on small screens */

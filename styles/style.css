@@ -41,6 +41,10 @@ a:active {
   color: orange;
 }
 
+a:visited {
+  color: rgb(55, 94, 187);
+}
+
 .paper {
   text-decoration: underline;
 }
