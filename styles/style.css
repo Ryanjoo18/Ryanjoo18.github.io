@@ -1,12 +1,35 @@
 /* Google Font Link */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swaphttps://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+:root {
+  --clr-dark: #070a13;
+  --clr-light: #f1f5f9;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-rose: #e11d48;
+  --clr-indigo: #4f46e5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #f1f5f9;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+}
+
 /* body */
 body {
   font-family: "Nunito", sans-serif;
   font-size: 1em;
-  color: black;
   margin: 0px;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
 }
 
 /* main margins */
@@ -58,9 +81,10 @@ body {
 /* xs */
 @media (max-width: 475px) {}
 
+/* headers */
 h1 {
-  font-size: 2.1em;
-  color: rgb(0, 94, 235);
+  font-size: 2.5em;
+  color: var(--clr-rose);
   font-weight: 400;
 }
 
@@ -77,9 +101,14 @@ p {
   font-weight: 400;
 }
 
+strong {
+  color: var(--clr-indigo);
+}
+
+/* links */
 a {
-  text-decoration: none;
-  color: rgb(0, 94, 235);
+  color: var(--clr-rose);
+  text-decoration: underline;
 }
 
 a:hover,
@@ -88,41 +117,23 @@ a:active {
 }
 
 a:visited {
-  color: rgb(0, 94, 235);
-}
-
-.paper {
-  text-decoration: underline;
+  color: var(--clr-rose);
 }
 
 .pub {
   font-weight: bold;
 }
 
+/* icons */
 .fa {
   margin-right: 5px;
 }
 
+/* figures */
 figcaption {
   font-style: italic;
   padding: 2px;
   text-align: center;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #efeded;
 }
 
 .home-art {
@@ -132,12 +143,15 @@ tr:nth-child(even) {
   width: 90%;
 }
 
+/* publications */
 .book-item {
   padding: 20px;
-  background-color: rgb(0, 94, 235);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: var(--clr-indigo);
   margin-bottom: 20px;
   border-radius: 10px;
-  box-shadow: 0px 1px 3px #5e5e5e;
+  /*box-shadow: 0px 0px 3px #5e5e5e;*/
 }
 
 .book-item .title {
