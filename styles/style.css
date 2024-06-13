@@ -23,6 +23,16 @@ html {
   --clr-slate800: #1e293b;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: var(--clr-rose);
+  background: #070a13;
+}
+
+::selection {
+  color: var(--clr-rose);
+  background: #070a13;
+}
+
 /* body */
 body {
   font-family: "Nunito", sans-serif;
