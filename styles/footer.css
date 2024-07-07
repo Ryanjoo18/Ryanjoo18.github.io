@@ -1,7 +1,7 @@
 .footer {
   font-size: 15px;
   color: white;
-  background-color: var(--clr-rose);
+  background-color: rgb(97, 98, 109);
   text-align: center;
   padding: 10px;
   bottom: 0; /* Position the navbar at the bottom of the page */
@@ -13,7 +13,7 @@
 }
 
 .footer a:hover, a:active {
-  color: orange;
+  color: rgb(41, 190, 240);
 }
 
 /* Style all font awesome icons */
@@ -28,6 +28,6 @@
 
 /* Add a hover effect if you want */
 .footer .fa-brands:hover, .footer .fa-solid:hover {
-  background: orange;
+  background: rgb(41, 190, 240);
   color: white;
 }
