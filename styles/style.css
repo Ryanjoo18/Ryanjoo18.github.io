@@ -25,12 +25,12 @@ html {
 
 ::-moz-selection { /* Code for Firefox */
   color: #070a13;
-  background: rgb(41, 190, 240);
+  background: rgb(49, 171, 49);
 }
 
 ::selection {
   color: #070a13;
-  background: rgb(41, 190, 240);
+  background: rgb(49, 171, 49);
 }
 
 /* body */
@@ -38,8 +38,6 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 1em;
   margin: 0px;
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
 }
 
 /* main margins */
@@ -94,17 +92,19 @@ body {
 /* headers */
 h1 {
   font-size: 2.5em;
-  color: white;
+  color: green;
   font-weight: 400;
 }
 
 h2 {
   font-size: 1.4em;
+  color: green;  
   font-weight: 800;
 }
 
 h3 {
   font-size: 1em;
+  color: green;
 }
 
 p {
@@ -112,22 +112,17 @@ p {
 }
 
 strong {
-  color: rgb(41, 190, 240);
+  color: green;
 }
 
 /* links */
 a {
-  color: white;
+  color: green;
   text-decoration: underline;
 }
 
-a:hover,
-a:active {
-  color: rgb(41, 190, 240);
-}
-
 a:visited {
-  color: white;
+  color: green;
 }
 
 .pub {
@@ -158,7 +153,9 @@ figcaption {
   padding: 20px;
   padding-top: 1px;
   padding-bottom: 1px;
-  background-color: rgb(97, 98, 109);
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,54,1) 47%, rgba(4,209,68,1) 100%);
+  /*https://cssgradient.io/*/
   border-color: white;
   border-style: solid;
   border-radius: 0.5px;
