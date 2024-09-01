@@ -154,7 +154,7 @@ figcaption {
   padding-top: 1px;
   padding-bottom: 1px;
   background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,54,1) 47%, rgba(4,209,68,1) 100%);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(11, 93, 44) 47%, rgb(2, 158, 51) 100%);
   /*https://cssgradient.io/*/
   border-color: white;
   border-style: solid;
@@ -162,20 +162,19 @@ figcaption {
   margin-bottom: 20px;
   border-radius: 10px;
   /*box-shadow: 0px 0px 3px #5e5e5e;*/
+  color: white;
+}
+
+.book-item a {
+  color: white;
 }
 
 .book-item .title {
-  color: white;
   font-weight: bold;
   font-size: x-large;
   text-decoration: none;
 }
 
 .book-item .author {
-  color: white;
   font-style: italic;
-}
-
-.book-item .desc {
-  color: white;
 }
