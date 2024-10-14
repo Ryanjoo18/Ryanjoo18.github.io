@@ -4,9 +4,6 @@
 :root {
   --clr-dark: #070a13;
   --clr-light: #f1f5f9;
-  --clr-slate400: #94a3b8;
-  --clr-slate600: #475569;
-  --clr-slate800: #1e293b;
 }
 
 html {
@@ -36,19 +33,11 @@ body {
   padding-bottom: 25px;
 }
 
-/* 2xl */
-@media (max-width: 1536px) {
-  .main {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
-
 /* xl */
 @media (max-width: 1280px) {
   .main {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 15%;
+    padding-right: 15%;
   }
 }
 
@@ -71,8 +60,8 @@ body {
 /* sm */
 @media (max-width: 640px) {
   .main {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 
