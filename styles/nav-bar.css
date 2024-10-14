@@ -20,13 +20,13 @@
 
 /* Change the color of links on hover */
 .nav-menu-links a:hover {
-  color: green;
+  color: black;
 }
 
 /* Add an active class to highlight the current page */
 .nav-menu-links a.active {
   font-weight: 700;
-  color: green;
+  color: black;
 }
 
 /* Hide the button that should open and close the navigation bar on small screens */

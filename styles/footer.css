@@ -1,7 +1,5 @@
 .footer {
   font-size: 15px;
-  color: white;
-  background-color: rgb(2, 84, 2);
   text-align: center;
   padding: 10px;
   bottom: 0; /* Position the navbar at the bottom of the page */
@@ -9,25 +7,20 @@
 
 .footer a {
   color: inherit;
-  transition: 0.3s;
-}
-
-.footer a:hover, a:active {
-  color: rgb(41, 190, 240);
+  transition: 0.2s;
 }
 
 /* Style all font awesome icons */
 .footer .fa-brands, .footer .fa-solid {
   padding: 10px;
   width: 16px;
-  border-radius: 25%;
+  border-radius: 50%;
   text-align: center;
   text-decoration: none;
-  color: white;
 }
 
 /* Add a hover effect if you want */
 .footer .fa-brands:hover, .footer .fa-solid:hover {
-  background: rgb(41, 190, 240);
+  background: black;
   color: white;
 }
