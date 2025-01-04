@@ -27,31 +27,6 @@ body {
   margin: 0px;
 }
 
-/* main margins */
-.main {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-/* md */
-@media (min-width: 640px) {
-  .main {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-}
-
-/* sm */
-@media (max-width: 640px) {
-  .main {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
-/* xs */
-@media (max-width: 475px) {}
-
 /* headers */
 h1 {
   font-size: 2.5em;
@@ -74,8 +49,22 @@ p {
   font-weight: 400;
 }
 
-strong {
-  color: #120400;
+/* main margins */
+.main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+@media (min-width: 640px) {
+  .main {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+@media (max-width: 640px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /* links */
@@ -91,33 +80,7 @@ a:visited {
   text-decoration-color: #007FFF;
 }
 
-.pub {
-  font-weight: bold;
-}
-
 /* icons */
 .fa {
   margin-right: 5px;
-}
-
-/* publications */
-.book-item {
-  padding: 20px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-  background: #b6c0c2;
-  border-color: white;
-  border-style: solid;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
-.book-item .title {
-  font-weight: bold;
-  font-size: x-large;
-  text-decoration: none;
-}
-
-.book-item .author {
-  font-style: italic;
 }

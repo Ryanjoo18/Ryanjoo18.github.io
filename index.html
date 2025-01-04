@@ -7,16 +7,12 @@
   <meta name="description" content="Welcome to my personal website!" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ryan Joo &bull; About</title>
+  <title>Ryan Joo</title>
   <link rel="icon" href="/files/pics/logo.png" type="image/x-icon" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="/styles/style.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/nav-bar.css" />
-  <link rel="stylesheet" href="/styles/profile.css" />
   <link rel="stylesheet" href="/styles/scrollbar.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
-  <link rel="stylesheet" href="/styles/profile.css" type="text/css" />
 
   <!--Font awesome icons-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
@@ -31,42 +27,41 @@
 </head>
 
 <body>
-  <!-- Navigation bar -->
+  <!--
   <div id="nav-menu-links" class="nav-menu-links">
-    <a href="/index.html" class="active">About</a>
-    <a href="/publications.html">Publications</a>
-    <a href="/projects.html">Projects</a>
-    <a href="/writings.html">Writings</a>
+    
     <a href="javascript:void(0);" id="nav-button" class="nav-button" aria-label="Toggle navigation"
       onclick="navButton()">
       <i class="fa-solid fa-bars"></i>
     </a>
   </div>
+  -->
 
   <div class="main">
-    <h1>About</h1>
-    <p>
-      If you've stumbled upon this website, hi there!
-    </p>
+    <h1>Ryan Joo</h1>
+
+    <nav>
+    <a href="#">Home</a> |
+    <a href="#publications">Publications</a> |
+    <a href="#projects">Projects</a> |
+    <a href="#writings">Writings</a>
+    </nav>
 
     <p>
-      This is the home page of <strong>Ryan Joo</strong>. I am a high-school student, just finished my A-levels in Singapore, and now planning to read Mathematics at the undergraduate level. I love participating in mathematics olympiad competitions and I am currently exploring university-level mathematics.
-    </p>
-
-    <p>
-      You can read some of my <a href="/publications.html">publications</a> and <a href="/projects.html">projects</a>, as well as some of my <a href="writings.html">writings</a> concerning notes I have taken in school, olympiad materials, and random topics that interest me. The source code for all my projects and writings can be found on <a href="https://github.com/Ryanjoo18">my GitHub</a>.
-    </p>
-
-    <p>
+      This is the home page of <strong>Ryan Joo</strong>. 
       A complete <abbr title="Curriculum Vitae">CV</abbr> is available <a href="/files/cv/CV.pdf">here</a>.
     </p>
 
+    
+
+    <!--
     <figure>
       <img src="/files/pics/home-art.png" alt="Nine point circle" class="home-art" />
       <figcaption>Nine point circle, defined by three sets of points: midpoints of sides, feet of altitudes, and midpoints to the orthocenter.</figcaption>
     </figure>
+    -->    
 
-    <h2>Education</h2>
+    Education:
     <ul class="fa-ul" style="--fa-li-width: 2em;">
       <li><p><span class="fa-li"><i class="fa fa-graduation-cap"></i></span><strong>Dunman High School, SG</strong> &#x2022; 2023-2024
       <br>
@@ -80,14 +75,49 @@
       </p></li>
     </ul>
 
-    <!--<h2>Interests</h2>
-    <p>Number Theory, Geometry</p> -->
+    Contact:
+    <ul>
+      <li><p>Contact me via <a href="mailto:ryanjooruian18@gmail.com">email</a>.</p></li>
+      <li><p>View my writings and projects on my <a href="https://github.com/Ryanjoo18/">Github</a>.</p></li>
+      <li><p>Connect with me on <a href="https://www.linkedin.com/in/ryan-joo-rui-an/">Linkedin</a>.</p></li>
+    </ul>
 
+    <h2 id="publications">Publications</h2>
+    <p>Books:</p>
+    <ol>
+      <li><p><a href="https://github.com/Ryanjoo18/undergrad-maths/blob/main/main.pdf">Undergraduate Mathematics</a> (in writing)</p></li>
+      <li><p><a href="https://github.com/Ryanjoo18/math-olympiad/blob/main/main.pdf">Mathematics Olympiad: A Guidebook</a> (in writing)</p></li>
+    </ol>
+
+    <h2 id="projects">Projects</h2>
+    <p>View my projects on <a href="https://github.com/Ryanjoo18/">my Github</a>.</p>
+    <ul>
+      <li><p><a href="https://github.com/Ryanjoo18/analysing-happiness">Analysing Happiness: Understanding Determinants Across Global Contexts</a>: Jupyter Notebook project which analyses data from the World Happiness Report 2023 to determine the most important factor contributing to the happiness of a country.</p></li>
+      <li><p><a href="https://github.com/Ryanjoo18/different-sizes-of-infinity">Different Sizes of Infinity</a>: An exhibition poster which discusses the cardinality of infinite sets.</p></li>
+      <li><a href="https://ryanjoo18.github.io/snake/">Snake game</a></li>
+    </ul>
+
+    <h2 id="writings">Writings</h2>
+    <p>Notes:</p>
+    <ul>
+      <li><p><a href="https://github.com/Ryanjoo18/notes"><strong>A-Level notes</strong></a>: Notes I have taken when studying for the Singapore-Cambridge GCE A-Level, from 2023 to 2024.</p></li>
+      <li><p><a href=""><strong>Undergraduate Physics</strong> <i class="fa-solid fa-file-pdf" style="color:#007FFF"></i></a>: As per the title, notes I have taken when self-studying undergraduate physics. (TBC)</p>  </li>
+    </ul>
+
+    Blog:
+    <ul>
+      <li><p><a href="/files/writings/blog/pagerank.pdf"><strong>On the Google PageRank Algorithm <i class="fa-solid fa-file-pdf" style="color:#007FFF"></i></strong></a>: This article explains the workings behind the PageRank algorithm used by Google Search to rank web pages in their search engine results.</p></li>
+    </ul>
+
+
+    <!--
     <h2>Hobbies</h2>
     <p>During my free time, I like to play chess. You can find me on <a target="_blank" href="https://www.chess.com/member/rjra18">Chess.com</a> or <a href="https://lichess.org/@/Ryanjoo18">Lichess</a>.</p>
     <p>Once in a while, I do some programming on <a href="https://codeforces.com/profile/Ryanjoo18">Codeforces</a> or <a href="https://atcoder.jp/users/Ryanjoo18">Atcoder</a>, sometimes <a href="https://leetcode.com/u/ryanjooruian18/">Leetcode</a>.</p>
+    -->
   </div>
 
+  <!--
   <div class="footer">
     <p>Follow me on</p>
     <a href="mailto:ryanjooruian18@gmail.com" class="fa-solid fa-envelope" aria-label="Email"></a>
@@ -98,6 +128,7 @@
       <a href="https://github.com/Ryanjoo18/Ryanjoo18.github.io">Ryan Joo</a>.
     </p>
   </div>
+  -->
 </body>
 
 </html>
