@@ -16,12 +16,11 @@ html {
 body {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1em;
-  margin: 0px;
-  
+  margin: 40px;
 }
 
 /* headers */
-h1 {
+header {
   font-family: Garamond, serif;
   font-size: 2.5em;
   color: black;
@@ -44,21 +43,16 @@ p {
   line-height: 1.3;
 }
 
-/* main margins */
-.main {
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
 @media (min-width: 640px) {
-  .main {
-    padding-left: 10%;
-    padding-right: 10%;
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
   }
 }
 @media (max-width: 640px) {
-  .main {
-    padding-left: 5%;
-    padding-right: 5%;
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: small;
   }
 }
