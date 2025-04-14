@@ -7,12 +7,14 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1em;
   margin: 40px;
+  background-color: rgb(1, 1, 61);
+  color: white;
 }
 
 /* headers */
 header {
   font-size: 2.5em;
-  color: black;
+  color: white;
   font-weight: 400;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
@@ -21,13 +23,14 @@ header {
 
 h1 {
   font-size: 1.5em;
-  color:darkred;  
+  color:rgb(67, 154, 215);  
   font-weight: 400;
 }
 
 h2 {
   font-size: 1.2em;
   color: black;
+  color: aqua;
 }
 
 p {
@@ -51,8 +54,9 @@ p {
 
 /* links */
 a {
+  color: lightblue;
   text-decoration: underline;
-  text-decoration-color: blue;
+  text-decoration-color: lightblue;
 }
 
 a:visited {
