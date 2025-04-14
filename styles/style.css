@@ -60,9 +60,9 @@ a {
 }
 
 a:visited {
-  color: black;
+  color: lightblue;
   text-decoration: underline;
-  text-decoration-color: blue;
+  text-decoration-color: lightblue;
 }
 
 .fab, .fa-solid {
