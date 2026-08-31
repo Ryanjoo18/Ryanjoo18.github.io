@@ -1,0 +1,228 @@
+:root {
+  --background: #fbfbfa;
+  --text: #20252b;
+  --muted: #68717c;
+  --border: #d9dde2;
+  --accent: #193b63;
+  --max-width: 860px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family:
+    Charter, "Bitstream Charter", "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, serif;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s ease;
+}
+
+a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Layout
+-------------------------------------------------- */
+
+.container {
+  width: min(calc(100% - 48px), var(--max-width));
+  margin: 0 auto;
+  padding: 64px 0 72px;
+}
+
+/* Header
+-------------------------------------------------- */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+
+  padding-bottom: 28px;
+  border-bottom: 2px solid var(--accent);
+}
+
+.site-header h1 {
+  margin: 0;
+  color: var(--accent);
+  font-size: clamp(2.5rem, 6vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.contact {
+  flex-shrink: 0;
+
+  margin: 0;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+/* Introduction
+-------------------------------------------------- */
+
+.intro {
+  max-width: 720px;
+  margin: 0;
+  padding: 30px 0 4px;
+}
+
+.intro p {
+  margin: 0;
+
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+/* Sections
+-------------------------------------------------- */
+
+section {
+  margin-top: 44px;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+
+  margin-bottom: 4px;
+  padding-bottom: 8px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+h2 {
+  margin: 0;
+
+  color: var(--accent);
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Entries
+-------------------------------------------------- */
+
+.entries {
+  display: flex;
+  flex-direction: column;
+}
+
+.entry {
+  padding: 20px 0 21px;
+  border-bottom: 1px solid #e7e9ec;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry h3 {
+  margin: 0 0 4px;
+
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.entry p {
+  max-width: 680px;
+
+  margin: 0;
+
+  color: #59616b;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.in-progress {
+  margin-left: 6px;
+
+  color: var(--muted);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+footer {
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+
+  color: var(--muted);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  font-size: 0.75rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: min(calc(100% - 40px), var(--max-width));
+    padding: 40px 0 56px;
+  }
+
+  .site-header {
+    display: block;
+    padding-bottom: 24px;
+  }
+
+  .site-header h1 {
+    font-size: 2.65rem;
+  }
+
+  .contact {
+    margin-top: 18px;
+  }
+
+  .intro {
+    padding-top: 25px;
+  }
+
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  section {
+    margin-top: 36px;
+  }
+
+  .entry {
+    padding: 17px 0 18px;
+  }
+}
