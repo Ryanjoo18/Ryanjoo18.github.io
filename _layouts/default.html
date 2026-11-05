@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="light">
+    <title>{% unless page.home %}{{ page.title | escape }} | {% endunless %}{{ site.title | escape }}</title>
+    <meta name="description" content="{{ page.description | default: site.description | escape }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <div class="container">
+      <header class="site-header">
+        {% if page.home %}
+        <h1>{{ site.title | escape }}</h1>
+        {% else %}
+        <p class="site-name"><a href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></p>
+        {% endif %}
+        <p class="contact"><a href="mailto:{{ site.email | escape }}">{{ site.email | escape }}</a></p>
+      </header>
+      <main id="content"{% if page.home %} class="home"{% endif %}>
+        {% unless page.home %}<h1>{{ page.title | escape }}</h1>{% endunless %}
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>

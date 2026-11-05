@@ -1,0 +1,21 @@
+title: Ryan Joo Rui An
+description: Undergraduate in mathematics and computer science at the National University of Singapore.
+email: ryan.joo.ruian@u.nus.edu
+url: "https://ryanjoo18.github.io"
+baseurl: ""
+markdown: kramdown
+kramdown:
+  input: GFM
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - astro.config.mjs
+  - tsconfig.json
+  - src
+  - public
+  - dist
